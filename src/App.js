@@ -1,3 +1,6 @@
+import { Buscador } from "./components/Buscador";
+import { Crear } from "./components/Crear";
+import { Listado } from "./components/Listado";
 
 function App() {
   return (
@@ -25,47 +28,12 @@ function App() {
 
     
     <section className="content">
-        
-        <article className="peli-item">
-            <h3 className="title">Desarrollo web</h3>
-            <p className="description">nicolasvaldelamar.dev</p>
-            <button className="edit">Editar</button>
-            <button className="delete">Borrar</button>
-        </article>
-        <article className="peli-item">
-            <h3 className="title">Desarrollo web</h3>
-            <p className="description">nicolasvaldelamar.dev</p>
-            <button className="edit">Editar</button>
-            <button className="delete">Borrar</button>
-        </article>
-        <article className="peli-item">
-            <h3 className="title">Desarrollo web</h3>
-            <p className="description">nicolasvaldelamar.dev</p>
-            <button className="edit">Editar</button>
-            <button className="delete">Borrar</button>
-        </article>
-        <article className="peli-item">
-            <h3 className="title">Desarrollo web</h3>
-            <p className="description">nicolasvaldelamar.dev</p>
-            <button className="edit">Editar</button>
-            <button className="delete">Borrar</button>
-        </article>
+        <Listado/>
     </section>
 
     <aside className="lateral">
-        <div className="search">
-            <h3 className="title">Buscador</h3>
-            <form>
-                <input type="text" name="" id="" />
-                <button>Buscar</button>
-            </form>
-        </div>
-        <div className="add">
-            <h3 className="title">Añadir peliculas</h3>
-            <input type="text" placeholder="Titulo"/>
-            <textarea placeholder="Descripcion"></textarea>
-            <input type="submit" value="Guardar"/>
-        </div>
+        <Buscador/>
+        <Crear/>
     </aside>
 
     <footer className="footer">

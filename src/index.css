@@ -142,6 +142,10 @@ input[type="button"]{
 }
 
 
+.peli-item .edit{
+  margin-right: 8px;
+}
+
 .peli-item .edit:hover{
   background: #e77b00;
 }
