@@ -41,7 +41,10 @@ function App() {
     </section>
 
     <aside className="lateral">
-        <Buscador/>
+        <Buscador 
+            pelis = {pelis} 
+            setPelis = {setPelis}
+        />
         <Crear setPelis = {setPelis}/>
     </aside>
 
