@@ -179,8 +179,8 @@ input[type="button"]{
 
 
 
-.lateral input[type="text"],
-.lateral textarea{
+ input[type="text"],
+ textarea{
   display: block;
   margin: 0 auto;
   margin-top: 15px;

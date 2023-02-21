@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { ExtraerDelStorage } from '../helpers/ExtraerDelStorage'
+import { Editar } from './Editar'
 
 export const Listado = ({pelis, setPelis}) => {
   
@@ -49,7 +50,10 @@ export const Listado = ({pelis, setPelis}) => {
 
                     {/**Aparece formulario de editar */}
                     {editar === peli.id && (
-                      <h1>Formulario</h1>
+                      <Editar
+                        titulo = {peli.titulo}
+                        descripcion = {peli.descripcion}
+                      />
                     )}
                     </article>
                  )
