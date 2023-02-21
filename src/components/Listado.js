@@ -51,8 +51,9 @@ export const Listado = ({pelis, setPelis}) => {
                     {/**Aparece formulario de editar */}
                     {editar === peli.id && (
                       <Editar
-                        titulo = {peli.titulo}
-                        descripcion = {peli.descripcion}
+                        peli = {peli}
+                        setEditar = {setEditar}
+                        setPelis = {setPelis}
                       />
                     )}
                     </article>
