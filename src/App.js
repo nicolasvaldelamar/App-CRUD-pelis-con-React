@@ -49,7 +49,7 @@ function App() {
     </aside>
 
     <footer className="footer">
-        &copy; Máster en React
+        &copy; Hecho por Nicolás Valdelamar
     </footer>
 </div>
   );
